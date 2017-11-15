@@ -3,22 +3,6 @@ $navbar-default-bg: #ffb366;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
-/*full size bg image
-
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bg {
-  background-image: asset-url("#");
-  height: 100%;
-  background-position: left top;
-  background-repeat: repeat;
-  background-size: auto;
-}*/
-
 body {
   background: #f2f2f2;
 }
@@ -35,7 +19,8 @@ body {
 }
 
 #link {
-  
+  color: grey;
+  text-decoration: none;
 }
 
 #link:hover {

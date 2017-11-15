@@ -2,7 +2,7 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: [:edit, :show, :update, :destroy]
   
   def index
-    @all_articles = Article.all
+    @articles = Article.paginate(page: params[:page], per_page: 5)
   end
   
   def new
@@ -14,7 +14,6 @@ class ArticlesController < ApplicationController
   end
   
   def create
-    debugger
     @article = Article.new(article_params)
     # hard coded user until fully implemented
     @article.user = User.first

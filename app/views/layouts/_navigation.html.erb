@@ -29,7 +29,7 @@
         <% if logged_in? %>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="link">
-            <%= gravatar_for(current_user, size: 20) %> | <%= "#{current_user.username.capitalize}" %>
+            <%= gravatar_for(current_user, size: 20) %> | <%= "#{current_user.username.capitalize}" %> <small><%= "[admin]" if current_user.admin? %></small>
             <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><%= link_to "Edit Profile", edit_user_path(current_user) %></li>

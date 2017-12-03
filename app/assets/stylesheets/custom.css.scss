@@ -98,6 +98,17 @@ body {
   font-family: "Arial";
 }
 
+.badge {
+  background-color: #eaeaea;
+  text-transform: lowercase;
+  letter-spacing: -1px;
+  font-weight: thin;
+}
+
+.input_checkbox input {
+  width: auto !important;
+}
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
